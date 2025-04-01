@@ -10,7 +10,6 @@ class Dyhotomia
     Dyhotomia(){};
     ~Dyhotomia(){};
     void setData (double val_a, double val_b, double eps);
-    friend double funcValue(double x);
     void EndRoot();
 };
 
@@ -23,9 +22,10 @@ class NewtonsMethod {
     NewtonsMethod(){};
     ~NewtonsMethod(){};
     double Pohidna(double x, double eps);
-    friend double funcValue(double x);
     void setdata (double val_Xn, double val_toch);
     void Solution();
 };
+
+double funcValue(double x);
 
 #endif
